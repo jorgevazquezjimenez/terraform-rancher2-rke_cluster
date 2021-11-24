@@ -23,8 +23,3 @@ variable "description" {
   type = string
   description = "(Required) RKE cluster description"
 }
-
-variable "workers_node_template" {
-  type = string
-  description = "(Required) RKE worker nodes template name."
-}
