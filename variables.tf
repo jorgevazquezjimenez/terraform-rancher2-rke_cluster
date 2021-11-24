@@ -23,3 +23,9 @@ variable "description" {
   type = string
   description = "(Required) RKE cluster description"
 }
+
+variable "kubernetes_network_plugin" {
+  type = string
+  description = "(Required) Kubernetes network plugin. Default is calico"
+  default = "calico"
+}

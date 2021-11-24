@@ -14,10 +14,6 @@ provider "rancher2" {
   insecure = true
 }
 
-data "rancher2_node_template" "workers_template" {
-  name = var.workers_node_template
-}
-
 resource "rancher2_cluster" "rke" {
   name = var.name
   description = var.description
